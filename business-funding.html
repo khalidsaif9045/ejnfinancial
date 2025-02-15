@@ -31,34 +31,35 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-       
         .ebook-section {
             padding: 60px 20px;
             background-color: #174470;
             border-radius: 25px;
         }
-        .ebook-section p{
+    
+        .ebook-section p,
+        .benefits-list {
             color: #fff;
         }
-        .ebook-section img{
+    
+        .ebook-section img {
             height: 480px;
             width: 100%;
         }
-        .contact-info{
-            color: #fff;
-        }
+    
         .ebook-card {
-            
             background: white;
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
+    
         .ebook-title {
             font-size: 36px;
             font-weight: bold;
             color: #fff;
         }
+    
         .cta-button {
             background-color: #FFF;
             color: #000;
@@ -69,17 +70,104 @@
             display: inline-block;
             transition: background 0.3s;
         }
+    
         .cta-button:hover {
             background-color: #FFA000;
         }
+    
         .contact-info {
             font-size: 18px;
+            color: #fff;
             margin-top: 10px;
         }
+    
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .benefits-list li {
+            margin-bottom: 10px;
+        }
+    
         .social-icons a {
             color: white;
             font-size: 22px;
             margin: 0 10px;
+        }
+    
+        .hero-section {
+            position: relative;
+            background: linear-gradient(rgba(53, 53, 53, .1), rgba(53, 53, 53, .1)), url('img/carousel-1.jpg') center center no-repeat;
+            /* background: url('your-image-path.jpg') center/cover no-repeat; */
+            min-height: 440px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+    
+        .hero-section h1 {
+            color: #FFF;
+            margin-bottom: 30px;
+        }
+    
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+    
+        .hero-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        .hero-btn:hover {
+            background-color: #217dbb;
+        }
+    
+        .hero-paragraph {
+            margin-top: 20px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+    
+        .ebook-section2 {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+    
+        .ebook-section-container {
+            width: 60%;
+        }
+    
+        .ebook-btn {
+            background: #2a9df4;
+            color: #fff;
+            font-weight: bold;
+            transform: skewX(-10deg);
+            border: none;
+            padding: 12px 24px;
+            display: inline-block;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -166,18 +254,27 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5">
+    <div class="hero-section d-flex align-items-center justify-content-center">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center">
+            <!-- <p class="text-uppercase fw-bold animated slideInDown">IT'S TIME TO THINK OUTSIDE THE BANK</p> -->
+            <h1 class="display-5 fw-bold animated slideInDown">Fast, Flexible Business Funding to Fuel Your Growth</h1>
+            <p class="lead">Traditional banks say no—we say let’s make it happen. At EJN Financial, we provide quick, reliable funding solutions designed for growing businesses like yours. Whether you need capital for expansion, equipment, payroll, or cash flow, we help you secure funding without the hassle.</p>
+            <button class="btn hero-btn">PREQUALIFY TODAY</button>
+            <p class="hero-paragraph">Get Funded. Grow Faster. Succeed Sooner.</p>
+        </div>
+    </div>
+    <!-- <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">Business Funding</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="/">Home</a></li>
-                    <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
                     <li class="breadcrumb-item text-white active" aria-current="page">Business-Funding</li>
                 </ol>
             </nav>
         </div>
-    </div>
+    </div> -->
     <!-- Page Header End -->
 
      <!-- Feature Start -->
@@ -266,30 +363,72 @@
     </div>
     <!-- Feature End -->
 
+    <!-- OutThrough Section -->
+    <div class="container my-5 ebook-section-container">
+        <div class="row justify-content-center align-items-center ebook-section2">
+            <!-- Left: eBook Image -->
+            
+            <!-- Right: Content -->
+            <div class="col-md-12 text-center text-md-start">
+                <h2 class="fw-bold">Let’s Get Your Business the Funding It Deserves</h2>
+                <p class="text-muted fs-5">
+                    Running a business comes with challenges but accessing capital shouldn’t be one of them. Whether you need funds to scale, invest in new equipment, or bridge cash flow gaps, EJN Financial is here to help. We make business funding fast, simple, and stress-free, so you can focus on what truly matters, growing your business.
+                </p>
+                
+                <!-- Subheadline as clickable text -->
+                <!-- <a href="#" class="subheadline">Get Your Free Guide: "Unleashing the Power of Your Credit Score"</a> -->
+    
+                <!-- <p class="mt-3"><strong>In this comprehensive guide, you'll discover:</strong></p>
+                <ul class="benefits-list">
+                    <li>✅ The key factors that impact your credit score</li>
+                    <li>✅ Proven strategies to boost your financial profile</li>
+                    <li>✅ How to leverage your credit for real estate success</li>
+                </ul> -->
+                
+                <p><strong>Ready to Secure the Capital You Need? Apply today and take the next step toward financial freedom and business success.</strong></p>
+                
+                <a href="#" class="btn ebook-btn">Apply Now!</a>
+            </div>
+        </div>
+    </div>
+    <!-- OutThrough Section End -->
+
     <!-- Ebook-CTA -->
     <div class="container ebook-section text-center text-md-start">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-center">
             <!-- Book Cover -->
             <div class="col-md-5 text-center">
                 <div class="ebook-card">
-                    <img src="img/founderImg.webp" alt="Ebook Cover" class="img-fluid rounded">
+                    <img src="img/founderImg.webp" alt="Esta Crompton" class="img-fluid rounded">
                 </div>
             </div>
-
+    
             <!-- Content Section -->
             <div class="col-md-7">
-                <h2 class="ebook-title">Hello! I'm Esta Crompton</h2>
+                <h2 class="ebook-title">Meet Esta Crompton – Your Strategic Funding Partner</h2>
                 <p class="mt-3">
-                    Owner of EJN Financial. With over 30 years of experience in the financial industry,
-                    I have helped many achieve remarkable financial success.
+                    With over 30 years of experience in the financial industry, I’ve had the privilege of helping entrepreneurs, 
+                    real estate investors, and business owners secure the funding they need to thrive. 
+                    As the CEO of EJN Financial, my mission is simple:
                 </p>
-                <a href="#" class="cta-button mt-3">Download Your Free eBook</a>
-
+                <ul class="benefits-list">
+                    <li>✅ Provide tailored financial solutions that drive growth</li>
+                    <li>✅ Simplify the funding process with speed and efficiency</li>
+                    <li>✅ Empower businesses and investors with the resources they need to succeed</li>
+                </ul>
+                <p class="mt-3">
+                    At EJN Financial, we think outside the bank to deliver customized, results-driven funding solutions—from real estate financing to business scaling funding.
+                </p>
+                
+                <p class="mt-4"><strong>Your financial success starts with a conversation.</strong> Let’s Talk About Your Goals! Schedule a 1:1 consultation call, and let’s explore how we can help you achieve your vision.</p>
+                
+                <a href="#" class="cta-button mt-3">Book a Consultation</a>
+    
                 <div class="contact-info mt-4">
                     <i class="fas fa-phone"></i> Call: 727-513-6983 |
                     <i class="fas fa-envelope"></i> Email: esta@ejnfinancial.com
                 </div>
-
+    
                 <div class="social-icons mt-3">
                     <a href="#"><i class="bi bi-facebook"></i></a>
                     <a href="#"><i class="bi bi-instagram"></i></a>
@@ -298,6 +437,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Ebook-CTA End -->
 
     

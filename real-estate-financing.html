@@ -173,17 +173,18 @@
         }
 
         .modal-content {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 600px;
-            position: relative;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            transform: translateY(-20px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    width: 50%;
+    height: 80%; /* Adjust this based on your preference */
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; /* Prevent overflow outside the modal */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
 
         .modal.show {
             display: flex !important; /* Ensure visibility */
@@ -217,7 +218,7 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
+    <!-- <div class="container-fluid bg-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
@@ -242,7 +243,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Topbar End -->
 
 
@@ -295,7 +296,7 @@
             <!-- <p class="text-uppercase fw-bold animated slideInDown">IT'S TIME TO THINK OUTSIDE THE BANK</p> -->
             <h1 class="display-5 fw-bold animated slideInDown">Real Estate Financing Made Simple</h1>
             <p class="lead">Turn opportunities into reality with fast, flexible funding for your real estate investments. Whether you're acquiring a new property, refinancing, or funding a renovation, EJN Financial helps you secure the capital you need—without the hassle of traditional banks.</p>
-            <button class="btn hero-btn">APPLY NOW</button>
+            <button class="btn hero-btn" onclick="openForm()">APPLY NOW</button>
             <p class="hero-paragraph">Invest with Confidence. Grow with Ease.</p>
         </div>
     </div>
@@ -337,7 +338,7 @@
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Fix-and-Flip.jpg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
@@ -358,7 +359,7 @@
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Ground-up.jpg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 
@@ -379,7 +380,7 @@
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Rental.jpg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
@@ -400,7 +401,7 @@
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Multifamily.jpg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -557,6 +558,14 @@
         </iframe>
     </div>
 </div>
+<div id="form-container2" class="modal">
+    <div class="modal-content">
+        <span id="closeFormBtn2" onclick="closePop()" class="close-btn2">&times;</span>
+        <iframe src="https://api.leadconnectorhq.com/widget/survey/MDYwBW0241AwCzHAwKky" style="border:none;width:100%;" scrolling="no" id="MDYwBW0241AwCzHAwKky" title="EJN Financial Business Funding Application."></iframe>
+
+    </div>
+</div>
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -654,6 +663,15 @@
                 }
             });
         });
+        function openForm(){
+            const modal2 = document.getElementById("form-container2");
+            const closeBtn = document.getElementById("closeFormBtn2");
+            modal2.classList.add("show");
+        }
+        function closePop(){
+            const modal2 = document.getElementById("form-container2");
+            modal2.classList.remove("show");
+        }
     </script>
 </body>
 

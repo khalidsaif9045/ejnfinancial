@@ -392,6 +392,73 @@
     object-fit: cover;  /* Ensures full coverage */
 }
     </style>
+    <style>
+        .social-section {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 15px;
+        }
+        .social-section h2 {
+            color: #FFF;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 10px;
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s ease, color 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #f8c14b;
+        }
+        .cta-button {
+            margin-top: 20px;
+            background-color: #f8c14b;
+            color: #1e3c72;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s ease, color 0.3s;
+        }
+        .cta-button:hover {
+            background: white;
+            color: #1e3c72;
+        }
+    </style>
+    <style>
+        .company-details {
+            background-color: #0B3B60; /* Dark Blue Background */
+            color: white;
+            padding: 15px 0;
+            font-size: 16px;
+        }
+        .company-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .company-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+        .company-info a:hover {
+            color: #f8c14b; /* Highlight color */
+        }
+        .company-info i {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -528,171 +595,124 @@
     </div>
     <!-- Vision Section End -->
 
-    <!-- Podcast Section -->
-    <section class="podcast-section">
-        <h2 class="section-title">Listen to Our Podcasts</h2>
-        <div class="podcast-container">
-            <!-- Podcast 1 -->
-            <div class="podcast-card">
-                <div class="podcast-thumbnail">
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1"
-                        frameborder="0" allowfullscreen></iframe>
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="display-5 mb-5">What Others Are Saying</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                    <div class="testimonial-text text-center p-4">
+                        <p>EJN Financial treats you like family! Anytime we needed funding for a new home our broker went over and beyond so we could close in time for all of our homes. The staff is extremely professional, efficient, and kind. I highly recommend!</p>
+                        <h5 class="mb-1">Jillian C.</h5>
+                        <!-- <span class="fst-italic">Profession</span> -->
+                    </div>
                 </div>
-            </div>
-
-            <!-- Podcast 2 -->
-            <div class="podcast-card">
-                <div class="podcast-thumbnail">
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2"
-                        frameborder="0" allowfullscreen></iframe>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
+                    <div class="testimonial-text text-center p-4">
+                        <p>I really enjoyed working with Esta at EJN Financial she was knowledgeable, and always available with my schedule being a Largo Police Officer that was very important. I have recommended her to several coworkers, friends, and family members.</p>
+                        <h5 class="mb-1">Ricky M.</h5>
+                        <!-- <span class="fst-italic">Profession</span> -->
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Podcast Section End -->
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section py-5">
-        <div class="container my-5 ebook-section-container text-center">
-            <h2 class="section-title">Stay Informed. Stay Ahead.</h2>
-            <p class="section-description">
-                Get expert insights, funding strategies, and the latest industry trends delivered straight to your
-                inbox.
-                <strong>"Funding the Future"</strong>, our bi-weekly newsletter, keeps you informed on business
-                financing, real estate investing, and financial growth opportunities.
-            </p>
-            <div class="d-flex justify-content-center">
-                <a href="NL Sign up" class="btn btn-mod primary-btn">Sign Me Up!</a>
-            </div>
-        </div>
-
-        <div class="newsletters pt-5">
-            <h3 class="newsletter-subtitle">Explore Our Latest Newsletters</h3>
-            <div class="newsletter-list">
-                <a href="https://www.linkedin.com/pulse/understanding-different-types-business-loans-esta-crompton-mjpje"
-                    target="_blank" class="newsletter-card">
-                    <img src="img/newsletter1.jpg" alt="Newsletter 1">
-                    <p>Understanding Different Types of Business Loans</p>
-                </a>
-                <a href="https://www.linkedin.com/pulse/maximizing-operational-efficiency-smart-strategies-rely-esta-crompton-qxcze"
-                    target="_blank" class="newsletter-card">
-                    <img src="img/newsletter2.jpg" alt="Newsletter 2">
-                    <p>Maximizing Operational Efficiency with Smart Strategies</p>
-                </a>
-                <a href="https://www.linkedin.com/pulse/ditch-resolutions-theres-smarter-way-plan-business-growth-crompton-csxpe"
-                    target="_blank" class="newsletter-card">
-                    <img src="img/newsletter3.jpg" alt="Newsletter 3">
-                    <p>A Smarter Way to Plan Business Growth</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ebook Section -->
-    <section class="ebook-section py-5">
-        <div class="container my-5 ebook-section-container text-center">
-            <h2 class="section-title">Take Control of Your Business Growth</h2>
-            <p class="section-description">
-                Your credit score is more than just a number—it’s a powerful tool that can open doors to better funding
-                opportunities. Learn how to leverage and improve your credit with our free guide <strong>"Unleashing the
-                    Power of Your Credit Score"</strong>.
-            </p>
-            <ul class="ebook-benefits">
-                <li>📖 Understand the key factors that impact your credit</li>
-                <li>🚀 Discover actionable steps to boost your score</li>
-                <li>💰 Unlock better financing options for your business & investments</li>
-            </ul>
-            <a href="Funnel link" class="btn btn-mod primary-btn">Download Free Ebook</a>
-        </div>
-    </section>
-    <!-- Newsletter Section End -->
-
-    <!-- FAQ Section -->
-    <div class="container faq-container">
-        <h2 class="text-center text-primary fw-bold mb-3">FAQ</h2>
-        <div class="accordion" id="faqAccordion">
-
-            <!-- Question 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                        How do you provide value to my business?
-                    </button>
-                </h2>
-                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        As entrepreneurs, we understand that you need enough working capital to fund various aspects of
-                        your business...
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
+                    <div class="testimonial-text text-center p-4">
+                        <p>EJN Financial is a breath of fresh air!! When it comes to getting funding for our clients' real estate investments, we turn to our partners at EJN. Their results are phenomenal!⭐️⭐️⭐️⭐️⭐️</p>
+                        <h5 class="mb-1">Keesha G.</h5>
+                        <!-- <span class="fst-italic">Profession</span> -->
                     </div>
                 </div>
             </div>
-
-            <!-- Question 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq2">
-                        What is the application process?
-                    </button>
-                </h2>
-                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        The application process involves filling out a form, submitting required documents, and
-                        undergoing verification...
-                    </div>
-                </div>
-            </div>
-
-            <!-- Question 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq3">
-                        What can I use the money for?
-                    </button>
-                </h2>
-                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        The funding can be used for business expansion, payroll, equipment purchase, marketing, and
-                        more...
-                    </div>
-                </div>
-            </div>
-
-            <!-- Question 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq4">
-                        How long does the approval process take?
-                    </button>
-                </h2>
-                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Approval typically takes between 24-72 hours, depending on the verification process...
-                    </div>
-                </div>
-            </div>
-
-            <!-- Question 5 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq5">
-                        How long will it take to get my money?
-                    </button>
-                </h2>
-                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Once approved, funds are usually disbursed within 1-3 business days...
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-    <!-- FAQ Section End -->
+    <!-- Testimonial End -->
+
+    <!-- social-section -->
+    <div class="container">
+        <div class="social-section">
+            <h2 class="fw-bold">Follow us and Stay Connected</h2>
+            <p class="mt-3">
+                Get real-time insights, expert funding tips, and the latest industry trends by following us on social media!
+                Join our community of entrepreneurs, real estate investors, and business owners who think outside the bank in securing the funding they need to grow and scale.
+            </p>
+            <div class="social-icons mt-4">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <a href="#" class="cta-button">Check out our latest posts and follow us for more!</a>
+        </div>
+    </div>
+    <!-- social-section end -->
+
+   <!-- Contact Start -->
+   <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0 2rem;">
+    <div class="container contact px-lg-0">
+        <div class="row g-0 mx-lg-0 justify-content-center">
+            <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 ps-lg-0">
+                    <div class="section-title text-start">
+                        <h1 class="display-5 mb-4">Contact Us</h1>
+                    </div>
+                    <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+<section class="company-details">
+    <div class="container text-center">
+        <div class="company-info">
+            <a href="tel:7275136983"><i class="fab fa-whatsapp"></i> Call: 727-513-6983</a>
+            <a href="mailto:esta@ejnfinancial.com"><i class="fas fa-envelope"></i> Email: esta@ejnfinancial.com</a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+        </div>
+    </div>
+</section>
+    
+
+   
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">

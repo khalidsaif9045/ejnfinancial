@@ -37,7 +37,53 @@
         .section-title h1::after {
             display: none;
         }
+        /* Modal Styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1022;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .modal.show {
+            display: flex !important; /* Ensure visibility */
+        }
+
+        .modal.show .modal-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Close Button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 </head>
 
 <body>
@@ -519,7 +565,19 @@
     </div>
     <!-- Testimonial End -->
 
-
+    <!-- Modal Structure -->
+    <div id="form-container" class="modal">
+        <div class="modal-content">
+            <span id="closeFormBtn" class="close-btn">&times;</span>
+            <iframe
+                src="https://api.leadconnectorhq.com/widget/form/HHuzzlUyHyW0ONPoSqtR"
+                style="width:100%;height:424px;border:none;border-radius:4px"
+                id="inline-HHuzzlUyHyW0ONPoSqtR" 
+                title="Newsletter Sign Up">
+            </iframe>
+        </div>
+    </div>
+    
 
     <!-- About Start -->
     <!-- <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
@@ -804,10 +862,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>Get exclusive funding insights straight to your inbox! </p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <!-- <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> -->
+                        <button type="button" id="openFormBtn" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up Now To Our Newsletter</button>
                     </div>
                 </div>
             </div>
@@ -846,6 +904,29 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("form-container");
+            const openBtn = document.getElementById("openFormBtn");
+            const closeBtn = document.getElementById("closeFormBtn");
+    
+            openBtn.addEventListener("click", function () {
+                modal.classList.add("show");
+            });
+    
+            closeBtn.addEventListener("click", function () {
+                modal.classList.remove("show");
+            });
+    
+            // Close modal when clicking outside content
+            modal.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.classList.remove("show");
+                }
+            });
+        });
+    </script>
+    
 </body>
 
 </html>

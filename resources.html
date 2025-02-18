@@ -159,7 +159,7 @@
         }
 
         .hero-btn {
-            background-color: #3498db;
+            background-color: #4FC2F2;
             color: white;
             padding: 12px 24px;
             border: none;
@@ -169,7 +169,8 @@
         }
 
         .hero-btn:hover {
-            background-color: #217dbb;
+            background-color: #174470;
+            color: #FFF;
         }
 
         .guide-title {
@@ -251,12 +252,13 @@
         }
 
         .primary-btn {
-            background-color: #3498db;
+            background-color: #4FC2F2;
             color: white;
         }
 
         .primary-btn:hover {
-            background-color: #217dbb;
+            background-color: #174470;
+            color: #FFF;
         }
 
         /* Newsletter Section */
@@ -293,6 +295,7 @@
 
         .newsletter-card:hover {
             transform: scale(1.05);
+            color: #000;
         }
 
         .newsletter-card img {
@@ -306,9 +309,50 @@
             font-size: 16px;
             font-weight: bold;
         }
+        .newsletter-card p:hover {
+            color: #000;
+        }
 
         /* Ebook Section */
-        .ebook-benefits {
+        .ebook-section {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        .ebook-img {
+            max-width: 100%;
+            height: 320px;
+            border-radius: 10px;
+            /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+        }
+        .ebook-btn {
+            background: #4FC2F2;
+            color: #fff;
+            font-weight: bold;
+            transform: skewX(-10deg);
+            border: none;
+            padding: 12px 24px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .ebook-btn:hover {
+            background: #174470;
+            color: #FFF;
+        }
+        .subheadline {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2a9df4;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+        .subheadline:hover {
+            color: #007acc;
+        }
+        /* .ebook-benefits {
             list-style: none;
             padding: 0;
             text-align: center;
@@ -318,7 +362,7 @@
 
         .ebook-benefits li {
             margin: 5px 0;
-        }
+        } */
 
         .ebook-section-container {
             width: 60%;
@@ -355,7 +399,7 @@
 
         .accordion-button:not(.collapsed) {
             background-color: #e7f1ff;
-            color: #007bff;
+            color: #174470;
         }
 
         .accordion-button:focus {
@@ -575,8 +619,40 @@
         </div>
     </section>
 
+     <!-- Ebook-CTA -->
+     <div class="container my-5">
+        <div class="row align-items-center ebook-section">
+            <!-- Left: eBook Image -->
+            <div class="col-md-4 text-center">
+                <img src="img/ebookejn.webp" class="ebook-img img-fluid" alt="eBook Cover">
+            </div>
+            <!-- Right: Content -->
+            <div class="col-md-7 text-center text-md-start">
+                <h2 class="fw-bold">Take Control of Your Business Growth</h2>
+                <p class="text-muted fs-5">
+                    Your credit score is more than just a number—it’s a powerful tool that can open doors to better funding opportunities. Learn how to leverage and improve your credit with our free guide
+                </p>
+                
+                <!-- Subheadline as clickable text -->
+                <a href="#" class="subheadline">"Unleashing the Power of Your Credit Score"</a>
+    
+                <!-- <p class="mt-3"><strong>In this comprehensive guide, you'll discover:</strong></p> -->
+                <ul class="benefits-list">
+                    <li>📖 Understand the key factors that impact your credit</li>
+                <li>🚀 Discover actionable steps to boost your score</li>
+                <li>💰 Unlock better financing options for your business & investments</li>
+                </ul>
+                
+                <p><strong>Take control of your financial future and open the door to better funding opportunities.</strong></p>
+                
+                <a href="#" class="btn ebook-btn">Download Free Ebook</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ebook-CTA End -->
+
     <!-- Ebook Section -->
-    <section class="ebook-section py-5">
+    <!-- <section class="ebook-section py-5">
         <div class="container my-5 ebook-section-container text-center">
             <h2 class="section-title">Take Control of Your Business Growth</h2>
             <p class="section-description">
@@ -591,7 +667,7 @@
             </ul>
             <a href="Funnel link" class="btn btn-mod primary-btn">Download Free Ebook</a>
         </div>
-    </section>
+    </section> -->
     <!-- Newsletter Section End -->
 
     <!-- FAQ Section -->

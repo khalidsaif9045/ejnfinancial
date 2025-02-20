@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -35,38 +37,40 @@
         .section-title h1::before {
             display: none;
         }
+
         .section-title h1::after {
             display: none;
         }
+
         .ebook-section {
             padding: 60px 20px;
             background-color: #174470;
             border-radius: 25px;
         }
-    
+
         .ebook-section p,
         .benefits-list {
             color: #fff;
         }
-    
+
         .ebook-section img {
             height: 480px;
             width: 100%;
         }
-    
+
         .ebook-card {
             background: white;
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
-    
+
         .ebook-title {
             font-size: 36px;
             font-weight: bold;
             color: #fff;
         }
-    
+
         .cta-button {
             background-color: #4FC2F2;
             color: #FFF;
@@ -78,34 +82,34 @@
             transition: background 0.3s;
             border: 1px solid transparent;
         }
-    
+
         .cta-button:hover {
             background-color: #174470;
             color: #FFF;
             border: 1px solid #FFF;
         }
-    
+
         .contact-info {
             font-size: 18px;
             color: #fff;
             margin-top: 10px;
         }
-    
+
         .benefits-list {
             list-style: none;
-            padding: 0;
+            padding: 0px 0px 0px 16px;
         }
-    
+
         .benefits-list li {
             margin-bottom: 10px;
         }
-    
+
         .social-icons a {
             color: white;
             font-size: 22px;
             margin: 0 10px;
         }
-    
+
         .hero-section {
             position: relative;
             background: linear-gradient(rgba(53, 53, 53, .1), rgba(53, 53, 53, .1)), url('img/business-funding.jpg') center center no-repeat;
@@ -116,12 +120,12 @@
             text-align: center;
             color: white;
         }
-    
+
         .hero-section h1 {
             color: #FFF;
             margin-bottom: 30px;
         }
-    
+
         .hero-overlay {
             background: rgba(0, 0, 0, 0.6);
             width: 100%;
@@ -130,7 +134,7 @@
             top: 0;
             left: 0;
         }
-    
+
         .hero-content {
             position: relative;
             z-index: 1;
@@ -138,7 +142,7 @@
             max-width: 800px;
             margin: auto;
         }
-    
+
         .hero-btn {
             background-color: #4FC2F2;
             color: white;
@@ -147,29 +151,29 @@
             font-weight: bold;
             text-transform: uppercase;
         }
-    
+
         .hero-btn:hover {
             background-color: #174470;
             color: #FFF;
         }
-    
+
         .hero-paragraph {
             margin-top: 20px;
             font-size: 16px;
             opacity: 0.8;
         }
-    
+
         .ebook-section2 {
             background: #fff;
             border-radius: 15px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 40px;
         }
-    
+
         .ebook-section-container {
             width: 60%;
         }
-    
+
         .ebook-btn {
             background: #4FC2F2;
             color: #fff;
@@ -180,6 +184,7 @@
             display: inline-block;
             margin-top: 15px;
         }
+
         .ebook-btn:hover {
             background: #174470;
             color: #fff;
@@ -188,56 +193,96 @@
     <style>
         /* Modal Styling */
         .modal {
-           display: none; /* Hidden by default */
-           position: fixed;
-           z-index: 1022;
-           left: 0;
-           top: 0;
-           width: 100%;
-           height: 100%;
-           background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-           align-items: center;
-           justify-content: center;
-       }
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            z-index: 1022;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Dark overlay */
+            align-items: center;
+            justify-content: center;
+        }
 
-       .modal-content {
-    position: relative;
-    margin: 5% auto;
-    padding: 20px;
-    width: 50%;
-    height: 80%; /* Adjust this based on your preference */
-    background: white;
-    border-radius: 15px;
-    overflow: hidden; /* Prevent overflow outside the modal */
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-}
+        .modal-content {
+            position: relative;
+            margin: 5% auto;
+            padding: 20px;
+            width: 50%;
+            height: 80%;
+            /* Adjust this based on your preference */
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            /* Prevent overflow outside the modal */
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
 
-       .modal.show {
-           display: flex !important; /* Ensure visibility */
-       }
+        .modal.show {
+            display: flex !important;
+            /* Ensure visibility */
+        }
 
-       .modal.show .modal-content {
-           opacity: 1;
-           transform: translateY(0);
-       }
+        .modal.show .modal-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-       /* Close Button */
-       .close-btn {
-           position: absolute;
-           top: 10px;
-           right: 15px;
-           font-size: 20px;
-           font-weight: bold;
-           cursor: pointer;
-       }
-   </style>
+        /* Close Button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .benefits-list ul {
+            list-style: none;
+            padding: 0px 0px 0px 16px;
+        }
+
+        .benefits-list li {
+            padding-left: 15px;
+        }
+
+        .benefits-list li::before {
+            content: "✔";
+            /* Unicode for a bullet or you can use another symbol */
+            color: #4FC2F2;
+            /* Change bullet color */
+            font-size: 16px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .benefits-list li::marker {
+            content: "✔";
+            /* Unicode for a bullet or you can use another symbol */
+            color: #FFF;
+            /* Change bullet color */
+            font-size: 16px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-right: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -264,9 +309,14 @@
                     <small>+012 345 6789</small>
                 </div> -->
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/ejnfinancial"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/ejnfinancial/"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.linkedin.com/in/estacrompton/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/ejnfinancial"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0"
+                        href="https://www.instagram.com/ejnfinancial/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1"
+                        href="https://www.linkedin.com/company/ejnfinancial/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -310,7 +360,8 @@
                 </div> -->
                 <a href="about-us.html" class="nav-item nav-link">About Us</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Apply Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Apply Now<i
+                    class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -322,7 +373,9 @@
         <div class="hero-content text-center">
             <!-- <p class="text-uppercase fw-bold animated slideInDown">IT'S TIME TO THINK OUTSIDE THE BANK</p> -->
             <h1 class="display-5 fw-bold animated slideInDown">Fast, Flexible Business Funding to Fuel Your Growth</h1>
-            <p class="lead">Traditional banks say no—we say let’s make it happen. At EJN Financial, we provide quick, reliable funding solutions designed for growing businesses like yours. Whether you need capital for expansion, equipment, payroll, or cash flow, we help you secure funding without the hassle.</p>
+            <p class="lead">Traditional banks say no—we say let’s make it happen. At EJN Financial, we provide quick,
+                reliable funding solutions designed for growing businesses like yours. Whether you need capital for
+                expansion, equipment, payroll, or cash flow, we help you secure funding without the hassle.</p>
             <button class="btn hero-btn">PREQUALIFY TODAY</button>
             <p class="hero-paragraph">Get Funded. Grow Faster. Succeed Sooner.</p>
         </div>
@@ -340,13 +393,13 @@
     </div> -->
     <!-- Page Header End -->
 
-     <!-- Feature Start -->
-     <div class="container">
+    <!-- Feature Start -->
+    <div class="container">
         <div class="section-title text-center">
             <h1 class="display-5 mb-1 mt-4">Our Business Funding Solutions</h1>
         </div>
-      </div>
-     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
+    </div>
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-1"></div>
@@ -355,19 +408,21 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">BUSINESS LINE OF CREDIT</h1>
                         </div>
-                        <p class="mb-4 pb-2">A revolving line of credit provides a flexible option for business capital, giving you access to funds when you need them and only charging for what you use.</p>
+                        <p class="mb-4 pb-2">A revolving line of credit provides a flexible option for business capital,
+                            giving you access to funds when you need them and only charging for what you use.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/Line-of-Credit.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Line-of-Credit.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
         </div>
     </div>
-     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0 flex-row-reverse">
                 <div class="col-lg-2"></div>
@@ -376,20 +431,22 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">TERM LOAN</h1>
                         </div>
-                        <p class="mb-4 pb-2">Our business term loan is one of the best funding solutions for small businesses in need of long term working capital for growth.
+                        <p class="mb-4 pb-2">Our business term loan is one of the best funding solutions for small
+                            businesses in need of long term working capital for growth.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/Term-Loan.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Term-Loan.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
-     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-1"></div>
@@ -398,19 +455,21 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">A MERCHANT CASH ADVANCE</h1>
                         </div>
-                        <p class="mb-4 pb-2">Our merchant cash advance is a powerful working capital tool for businesses that need quick access to funds.</p>
+                        <p class="mb-4 pb-2">Our merchant cash advance is a powerful working capital tool for businesses
+                            that need quick access to funds.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/MCA.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/MCA.jpg" style="object-fit: cover;"
+                            alt="">
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
         </div>
     </div>
-     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0 flex-row-reverse">
                 <div class="col-lg-2"></div>
@@ -419,18 +478,20 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">INVOICE FACTORING</h1>
                         </div>
-                        <p class="mb-4 pb-2">Invoice factoring allows you to turn your unpaid invoices into up-front capital to support your cash flow.</p>
+                        <p class="mb-4 pb-2">Invoice factoring allows you to turn your unpaid invoices into up-front
+                            capital to support your cash flow.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/Invoice-Factoring.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Invoice-Factoring.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-1"></div>
@@ -439,19 +500,21 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">SBA LOAN</h1>
                         </div>
-                        <p class="mb-4 pb-2">While partially guaranteed by the government, SBA loans help business get access to working capital while securing a low interest and long repayment term.</p>
+                        <p class="mb-4 pb-2">While partially guaranteed by the government, SBA loans help business get
+                            access to working capital while securing a low interest and long repayment term.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/SBA-Loan.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/SBA-Loan.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
         </div>
     </div>
-     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 2rem 0;">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0 flex-row-reverse">
                 <div class="col-lg-2"></div>
@@ -460,12 +523,14 @@
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">EQUIPMENT FINANCING</h1>
                         </div>
-                        <p class="mb-4 pb-2">Our equipment loans allow you to purchase anything from office furniture and medical equipment to construction machinery or commercial kitchen equipment.</p>
+                        <p class="mb-4 pb-2">Our equipment loans allow you to purchase anything from office furniture
+                            and medical equipment to construction machinery or commercial kitchen equipment.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative d-flex justify-content-center align-items-center h-100">
-                        <img class="position-absolute img-fluid w-75 h-75" src="img/Equipment-Financing.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-75 h-75" src="img/Equipment-Financing.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -477,26 +542,30 @@
     <div class="container my-5 ebook-section-container">
         <div class="row justify-content-center align-items-center ebook-section2">
             <!-- Left: eBook Image -->
-            
+
             <!-- Right: Content -->
             <div class="col-md-12 text-center text-md-start">
                 <h2 class="fw-bold">Let’s Get Your Business the Funding It Deserves</h2>
                 <p class="text-muted fs-5">
-                    Running a business comes with challenges but accessing capital shouldn’t be one of them. Whether you need funds to scale, invest in new equipment, or bridge cash flow gaps, EJN Financial is here to help. We make business funding fast, simple, and stress-free, so you can focus on what truly matters, growing your business.
+                    Running a business comes with challenges but accessing capital shouldn’t be one of them. Whether you
+                    need funds to scale, invest in new equipment, or bridge cash flow gaps, EJN Financial is here to
+                    help. We make business funding fast, simple, and stress-free, so you can focus on what truly
+                    matters, growing your business.
                 </p>
-                
+
                 <!-- Subheadline as clickable text -->
                 <!-- <a href="#" class="subheadline">Get Your Free Guide: "Unleashing the Power of Your Credit Score"</a> -->
-    
+
                 <!-- <p class="mt-3"><strong>In this comprehensive guide, you'll discover:</strong></p>
                 <ul class="benefits-list">
                     <li>✅ The key factors that impact your credit score</li>
                     <li>✅ Proven strategies to boost your financial profile</li>
                     <li>✅ How to leverage your credit for real estate success</li>
                 </ul> -->
-                
-                <p><strong>Ready to Secure the Capital You Need? Apply today and take the next step toward financial freedom and business success.</strong></p>
-                
+
+                <p><strong>Ready to Secure the Capital You Need? Apply today and take the next step toward financial
+                        freedom and business success.</strong></p>
+
                 <a href="#" class="btn ebook-btn">Apply Now!</a>
             </div>
         </div>
@@ -512,33 +581,37 @@
                     <img src="img/Esta.jpg" alt="Esta Crompton" class="img-fluid rounded">
                 </div>
             </div>
-    
+
             <!-- Content Section -->
             <div class="col-md-7">
                 <h2 class="ebook-title">Meet Esta Crompton – Your Strategic Funding Partner</h2>
                 <p class="mt-3">
-                    With over 30 years of experience in the financial industry, I’ve had the privilege of helping entrepreneurs, 
-                    real estate investors, and business owners secure the funding they need to thrive. 
+                    With over 30 years of experience in the financial industry, I’ve had the privilege of helping
+                    entrepreneurs,
+                    real estate investors, and business owners secure the funding they need to thrive.
                     As the CEO of EJN Financial, my mission is simple:
                 </p>
                 <ul class="benefits-list">
-                    <li>✅ Provide tailored financial solutions that drive growth</li>
-                    <li>✅ Simplify the funding process with speed and efficiency</li>
-                    <li>✅ Empower businesses and investors with the resources they need to succeed</li>
+                    <li>Provide tailored financial solutions that drive growth</li>
+                    <li>Simplify the funding process with speed and efficiency</li>
+                    <li>Empower businesses and investors with the resources they need to succeed</li>
                 </ul>
                 <p class="mt-3">
-                    At EJN Financial, we think outside the bank to deliver customized, results-driven funding solutions—from real estate financing to business scaling funding.
+                    At EJN Financial, we think outside the bank to deliver customized, results-driven funding
+                    solutions—from real estate financing to business scaling funding.
                 </p>
-                
-                <p class="mt-4"><strong>Your financial success starts with a conversation.</strong> Let’s Talk About Your Goals! Schedule a 1:1 consultation call, and let’s explore how we can help you achieve your vision.</p>
-                
+
+                <p class="mt-4"><strong>Your financial success starts with a conversation.</strong> Let’s Talk About
+                    Your Goals! Schedule a 1:1 consultation call, and let’s explore how we can help you achieve your
+                    vision.</p>
+
                 <a href="#" class="cta-button mt-3">Book a Consultation</a>
-    
+
                 <div class="contact-info mt-4">
                     <i class="fas fa-phone"></i> Call: 727-513-6983 |
                     <i class="fas fa-envelope"></i> Email: esta@ejnfinancial.com
                 </div>
-    
+
                 <div class="social-icons mt-3">
                     <a href="https://www.facebook.com/ejnfinancial"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/ejnfinancial/"><i class="bi bi-instagram"></i></a>
@@ -547,10 +620,10 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Ebook-CTA End -->
 
-    
+
     <!-- Feature Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -558,76 +631,90 @@
                 <h1 class="display-5 mb-5">Our 3 Step Process</h1>
             </div>
             <div class="row g-5">
-                
+
                 <!-- Step 1 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn border" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                        <div class="d-flex align-items-center justify-content-center bg-light"
+                            style="width: 60px; height: 60px;">
                             <i class="fa fa-user-check fa-2x text-primary"></i>
                         </div>
                         <h1 class="display-1 text-light mb-0">01</h1>
                     </div>
                     <h5>Prequalify Online</h5>
-                    <p class="text-muted">To get prequalified, follow the "Apply Now" button and submit some basic business information.</p>
+                    <p class="text-muted">To get prequalified, follow the "Apply Now" button and submit some basic
+                        business information.</p>
                 </div>
-    
+
                 <!-- Step 2 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn border" data-wow-delay="0.3s">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                        <div class="d-flex align-items-center justify-content-center bg-light"
+                            style="width: 60px; height: 60px;">
                             <i class="fa fa-check fa-2x text-primary"></i>
                         </div>
                         <h1 class="display-1 text-light mb-0">02</h1>
                     </div>
                     <h5>Get Approved</h5>
-                    <p class="text-muted">After your submission has been processed by the underwriting team, we will reach out to discuss the options you qualify for.</p>
+                    <p class="text-muted">After your submission has been processed by the underwriting team, we will
+                        reach out to discuss the options you qualify for.</p>
                 </div>
-    
+
                 <!-- Step 3 -->
                 <div class="col-md-6 col-lg-4 wow fadeIn border" data-wow-delay="0.5s">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                        <div class="d-flex align-items-center justify-content-center bg-light"
+                            style="width: 60px; height: 60px;">
                             <i class="fa fa-drafting-compass fa-2x text-primary"></i>
                         </div>
                         <h1 class="display-1 text-light mb-0">03</h1>
                     </div>
                     <h5>Get Funded</h5>
-                    <p class="text-muted">Upon approval and accepting the offer, funds are deposited directly into your business bank account so you can use the money immediately.</p>
+                    <p class="text-muted">Upon approval and accepting the offer, funds are deposited directly into your
+                        business bank account so you can use the money immediately.</p>
                 </div>
-    
+
             </div>
         </div>
     </div>
-    
+
     <!-- Feature Start -->
 
-     <!-- Testimonial Start -->
-     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-title text-center">
                 <h1 class="display-5 mb-5">What Others Are Saying</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg"
+                        style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>EJN Financial treats you like family! Anytime we needed funding for a new home our broker went over and beyond so we could close in time for all of our homes. The staff is extremely professional, efficient, and kind. I highly recommend!</p>
+                        <p>EJN Financial treats you like family! Anytime we needed funding for a new home our broker
+                            went over and beyond so we could close in time for all of our homes. The staff is extremely
+                            professional, efficient, and kind. I highly recommend!</p>
                         <h5 class="mb-1">Jillian C.</h5>
                         <!-- <span class="fst-italic">Profession</span> -->
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg"
+                        style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>I really enjoyed working with Esta at EJN Financial she was knowledgeable, and always available with my schedule being a Largo Police Officer that was very important. I have recommended her to several coworkers, friends, and family members.</p>
+                        <p>I really enjoyed working with Esta at EJN Financial she was knowledgeable, and always
+                            available with my schedule being a Largo Police Officer that was very important. I have
+                            recommended her to several coworkers, friends, and family members.</p>
                         <h5 class="mb-1">Ricky M.</h5>
                         <!-- <span class="fst-italic">Profession</span> -->
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg"
+                        style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>EJN Financial is a breath of fresh air!! When it comes to getting funding for our clients' real estate investments, we turn to our partners at EJN. Their results are phenomenal!⭐️⭐️⭐️⭐️⭐️</p>
+                        <p>EJN Financial is a breath of fresh air!! When it comes to getting funding for our clients'
+                            real estate investments, we turn to our partners at EJN. Their results are phenomenal!</p>
                         <h5 class="mb-1">Keesha G.</h5>
                         <!-- <span class="fst-italic">Profession</span> -->
                     </div>
@@ -636,90 +723,94 @@
         </div>
     </div>
     <!-- Testimonial End -->
-<!-- Modal Structure -->
-<div id="form-container" class="modal">
-    <div class="modal-content">
-        <span id="closeFormBtn" class="close-btn">&times;</span>
-        <iframe
-            src="https://api.leadconnectorhq.com/widget/form/HHuzzlUyHyW0ONPoSqtR"
-            style="width:100%;height:424px;border:none;border-radius:4px"
-            id="inline-HHuzzlUyHyW0ONPoSqtR" 
-            title="Newsletter Sign Up">
-        </iframe>
+    <!-- Modal Structure -->
+    <div id="form-container" class="modal">
+        <div class="modal-content">
+            <span id="closeFormBtn" class="close-btn">&times;</span>
+            <iframe src="https://api.leadconnectorhq.com/widget/form/HHuzzlUyHyW0ONPoSqtR"
+                style="width:100%;height:424px;border:none;border-radius:4px" id="inline-HHuzzlUyHyW0ONPoSqtR"
+                title="Newsletter Sign Up">
+            </iframe>
+        </div>
     </div>
-</div>
-<div id="form-container2" class="modal">
-    <div class="modal-content">
-        <span id="closeFormBtn2" onclick="closePop()" class="close-btn2">&times;</span>
-        <iframe src="https://api.leadconnectorhq.com/widget/form/Rs32Jmfdkm2FeiXDV9ul"
-            style="width:100%;height:60%;border:none;border-radius:15px" id="inline-Rs32Jmfdkm2FeiXDV9ul"
-            data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value=""
-            data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate"
-            data-deactivation-value="" data-form-name="Pre-Qualification Form" data-height="647"
-            data-layout-iframe-id="inline-Rs32Jmfdkm2FeiXDV9ul" data-form-id="Rs32Jmfdkm2FeiXDV9ul"
-            title="Pre-Qualification Form"></iframe>
+    <div id="form-container2" class="modal">
+        <div class="modal-content">
+            <span id="closeFormBtn2" onclick="closePop()" class="close-btn2">&times;</span>
+            <iframe src="https://api.leadconnectorhq.com/widget/form/Rs32Jmfdkm2FeiXDV9ul"
+                style="width:100%;height:60%;border:none;border-radius:15px" id="inline-Rs32Jmfdkm2FeiXDV9ul"
+                data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value=""
+                data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate"
+                data-deactivation-value="" data-form-name="Pre-Qualification Form" data-height="647"
+                data-layout-iframe-id="inline-Rs32Jmfdkm2FeiXDV9ul" data-form-id="Rs32Jmfdkm2FeiXDV9ul"
+                title="Pre-Qualification Form"></iframe>
 
+        </div>
     </div>
-</div>
-   
 
 
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Connect With Us</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Florida, USA</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>727-513-6983</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>esta@ejnfinancial.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/ejnfinancial"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ejnfinancial/"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/estacrompton/"><i class="fab fa-linkedin-in"></i></a>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Connect With Us</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Florida, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>727-513-6983</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>esta@ejnfinancial.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/ejnfinancial"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ejnfinancial/"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.linkedin.com/company/ejnfinancial/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Real Estate Financing</a>
+                    <a class="btn btn-link" href="">Equipment Financing</a>
+                    <a class="btn btn-link" href="">Business Line of Credit</a>
+                    <a class="btn btn-link" href="">Merchant Cash Advance</a>
+                    <a class="btn btn-link" href="">SBA Loan</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="./resources.html#blogs-section">Blogs</a>
+                    <a class="btn btn-link" href="./resources.html#faqs-section">FAQ</a>
+                    <a class="btn btn-link" href="./about-us.html#contact-section">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <!-- <a class="btn btn-link" href="">Support</a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Get exclusive funding insights straight to your inbox! </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <!-- <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> -->
+                        <button type="button" id="openFormBtn"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up Now To Our
+                            Newsletter</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Services</h4>
-                <a class="btn btn-link" href="">Real Estate Financing</a>
-                <a class="btn btn-link" href="">Equipment Financing</a>
-                <a class="btn btn-link" href="">Business Line of Credit</a>
-                <a class="btn btn-link" href="">Merchant Cash Advance</a>
-                <a class="btn btn-link" href="">SBA Loan</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Quick Links</h4>
-                <a class="btn btn-link" href="./resources.html#blogs-section">Blogs</a>
-                <a class="btn btn-link" href="./resources.html#faqs-section">FAQ</a>
-                <a class="btn btn-link" href="./about-us.html#contact-section">Contact Us</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
-                <!-- <a class="btn btn-link" href="">Support</a> -->
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Newsletter</h4>
-                <p>Get exclusive funding insights straight to your inbox! </p>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <!-- <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"> -->
-                    <button type="button" id="openFormBtn" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up Now To Our Newsletter</button>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">EJN Financial</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!-- Designed By <a class="border-bottom" href="https://mrproviders.com">Mr Provider</a> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">EJN Financial</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <!-- Designed By <a class="border-bottom" href="https://mrproviders.com">Mr Provider</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
+    <!-- Footer End -->
 
 
     <!-- Back to Top -->
@@ -744,15 +835,15 @@
             const modal = document.getElementById("form-container");
             const openBtn = document.getElementById("openFormBtn");
             const closeBtn = document.getElementById("closeFormBtn");
-    
+
             openBtn.addEventListener("click", function () {
                 modal.classList.add("show");
             });
-    
+
             closeBtn.addEventListener("click", function () {
                 modal.classList.remove("show");
             });
-    
+
             // Close modal when clicking outside content
             modal.addEventListener("click", function (event) {
                 if (event.target === modal) {
@@ -760,12 +851,12 @@
                 }
             });
         });
-        function openForm(){
+        function openForm() {
             const modal2 = document.getElementById("form-container2");
             const closeBtn = document.getElementById("closeFormBtn2");
             modal2.classList.add("show");
         }
-        function closePop(){
+        function closePop() {
             const modal2 = document.getElementById("form-container2");
             modal2.classList.remove("show");
         }
